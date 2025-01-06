@@ -88,25 +88,35 @@
 # else:
 #     print("Por favor, informe uma string")
 # 23: Calculadora Simples
-try:
-    num1 = float(input("Digite o primeiro número: "))
-    num2 = float(input("Digite o segundo número: "))
-    operacao = input("Digite a operação desejada (+, -, *, /): ")
-    while operacao not in ["+", "-", "*", "/"]:
-        operacao = input("Operação inválida. Digite a operação desejada (+, -, *, /): ")
-    if operacao == "+":
-        print(f"A soma dos números é: {num1 + num2}")
-    elif operacao == "-":
-        print(f"A subtração dos números é: {num1 - num2}")
-    elif operacao == "*":
-        print(f"A multiplicação dos números é: {num1 * num2}")
-    elif operacao == "/":
-        if num2 == 0:
-            print("Não é possível dividir por zero")
-        else:
-            print(f"A divisão dos números é: {num1 / num2}")
-except ValueError:
-    print("Por favor, informe um número para a operação")
-
+# try:
+#     num1 = float(input("Digite o primeiro número: "))
+#     num2 = float(input("Digite o segundo número: "))
+#     operacao = input("Digite a operação desejada (+, -, *, /): ")
+#     while operacao not in ["+", "-", "*", "/"]:
+#         operacao = input("Operação inválida. Digite a operação desejada (+, -, *, /): ")
+#     if operacao == "+":
+#         print(f"A soma dos números é: {num1 + num2}")
+#     elif operacao == "-":
+#         print(f"A subtração dos números é: {num1 - num2}")
+#     elif operacao == "*":
+#         print(f"A multiplicação dos números é: {num1 * num2}")
+#     elif operacao == "/":
+#         if num2 == 0:
+#             print("Não é possível dividir por zero")
+#         else:
+#             print(f"A divisão dos números é: {num1 / num2}")
+# except ValueError:
+#     print("Por favor, informe um número para a operação")
 # 24: Classificador de Números
+try:
+    number = float(input("Digite um número: "))
+    is_even = 'e par' if number % 2 == 0 else 'e ímpar'
+    if number > 0:
+        print(f"O número é positivo {is_even}.")
+    elif number < 0:
+        print(f"O número é negativo {is_even}.")
+    else:
+        print("O número é zero.")
+except ValueError:
+    print("Por favor, informe um número.")
 # 25: Conversão de Tipo com Validação
