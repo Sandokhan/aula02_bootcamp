@@ -72,12 +72,22 @@
 # #### try-except e if
 
 # 21: Conversor de Temperatura
-try:
-    c = float(input("Digite a temperatura em Celsius: "))
-    print(f"A temperatura em Fahrenheit é: {(c * 1.8) + 32}")
-except ValueError:
-    print("Por favor, informe um inteiro para temperatura")
+# try:
+#     c = float(input("Digite a temperatura em Celsius: "))
+#     print(f"A temperatura em Fahrenheit é: {(c * 1.8) + 32}")
+# except ValueError:
+#     print("Por favor, informe um inteiro para temperatura")
 # 22: Verificador de Palíndromo
+
+palavra = input("Digite uma palavra ou frase: ")
+word = palavra.replace(" ", "").lower()
+if isinstance(word, str):
+    if word == word[::-1]:
+        print("A palavra é um palíndromo")
+    else:
+        print("A palavra não é um palíndromo")
+else:
+    print("Por favor, informe uma string")
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
